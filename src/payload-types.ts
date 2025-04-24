@@ -159,6 +159,10 @@ export interface Theme {
   id: number;
   _order?: string;
   title?: string | null;
+  meta?: {
+    title?: string | null;
+    description?: string | null;
+  };
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -264,6 +268,12 @@ export interface MediaSelect<T extends boolean = true> {
 export interface ThemesSelect<T extends boolean = true> {
   _order?: T;
   title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
   _status?: T;

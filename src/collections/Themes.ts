@@ -7,13 +7,17 @@ export const Themes: CollectionConfig = {
     useAsTitle: 'title'
   },
   versions: {
-    drafts: true
+    drafts: {
+      autosave: {
+        interval: 300
+      }
+    }
   },
   fields: [
     {
       name: 'title',
       label: 'Title',
       type: 'text'
-    },
+    }
   ]
 }
