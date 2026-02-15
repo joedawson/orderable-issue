@@ -2,7 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 export const Themes: CollectionConfig = {
   slug: 'themes',
-  orderable: true, // uncomment me after adding data
+  // orderable: true, // uncomment me after adding data
   admin: {
     useAsTitle: 'title'
   },

@@ -157,7 +157,6 @@ export interface Media {
  */
 export interface Theme {
   id: number;
-  _order?: string;
   title?: string | null;
   meta?: {
     title?: string | null;
@@ -266,7 +265,6 @@ export interface MediaSelect<T extends boolean = true> {
  * via the `definition` "themes_select".
  */
 export interface ThemesSelect<T extends boolean = true> {
-  _order?: T;
   title?: T;
   meta?:
     | T
